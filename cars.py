@@ -1,9 +1,12 @@
 class Car:
     runs = True
 
-    def start(self, name):
+    def __init__(self, name):
+        print(f'New car')
         self.name = name
+
+    def start(self):
         if self.runs:
-            print(f'{self.name} car is started')
+            print(f'{self.name} is started')
         else:
-            print(f'{self.name} car is broken')
+            print(f'{self.name} is broken!!')
